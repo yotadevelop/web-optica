@@ -2,7 +2,7 @@ new Vue({
     el:'#app',
     data: {
         rut:"",
-        url: "http://localhost:8080/Web-evaluacion-final/",
+        url: "https://web-optica.herokuapp.com/",
         cliente: {},
         id_material_cristal:"",
         id_tipo_cristal:"",

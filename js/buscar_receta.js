@@ -1,7 +1,7 @@
 new Vue({
     el:"#buscar_r",
     data: {
-        url: "http://localhost:8080/Web-evaluacion-final/",
+        url: "https://web-optica.herokuapp.com/",
         rut:"",
         fecha:"",
         recetas: [],
