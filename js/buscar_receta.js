@@ -1,7 +1,7 @@
 new Vue({
     el:"#buscar_r",
     data: {
-        url: "http://localhost:8080/Web-evaluacion-3/",
+        url: "http://localhost:8080/Web-evaluacion-final/",
         rut:"",
         fecha:"",
         recetas: [],
@@ -42,7 +42,7 @@ new Vue({
         },
         abrirModal: function(receta){
             this.receta = receta;
-            var modal = document.getElementById("modal");
+            var modal = document.getElementById("modal1");
             var instance = M.Modal.getInstance(modal);
             instance.open();
         },

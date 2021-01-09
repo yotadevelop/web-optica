@@ -94,7 +94,7 @@ class ExportarPDF
             <table border="1" cellpadding="4">
                 <tr>
                     <td>Precio</td>
-                    <td>' . $receta['valor_lente'] . '</td>
+                    <td>' . $receta['precio'] . '</td>
                 </tr>
                 <tr>
                     <td>Fecha de entrega</td>
@@ -157,7 +157,7 @@ class ExportarPDF
                 </tr>
                 <tr>
                     <td>Pupilar</td>
-                    <td>' . $receta['pupilar'] . '</td>
+                    <td>' . $receta['distancia_pupilar'] . '</td>
                 </tr>
 
             </table>    

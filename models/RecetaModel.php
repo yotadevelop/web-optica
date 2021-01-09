@@ -59,7 +59,7 @@ class RecetaModel{
             tc.tipo_cristal, distancia_pupilar, valor_lente "precio",
             fecha_entrega, fecha_retiro, observacion, cl.rut_cliente,
             cl.nombre_cliente, cl.telefono_cliente, us.nombre "nombre_vendedor",
-            receta.estado
+            receta.estado, nombre_medico, rut_medico
             from receta
             inner join material_cristal mt 
                 on mt.id_material_cristal=receta.material_cristal

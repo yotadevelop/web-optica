@@ -2,7 +2,7 @@ new Vue({
     el:'#app',
     data: {
         rut:"",
-        url: "http://localhost:8080/Web-evaluacion-3/",
+        url: "http://localhost:8080/Web-evaluacion-final/",
         cliente: {},
         id_material_cristal:"",
         id_tipo_cristal:"",
@@ -106,11 +106,17 @@ new Vue({
             form.append("rut_medico",this.rut_medico);
             form.append("nombre_medico",this.nombre_medico);
             try {
-                const res = await fetch(this.url + recurso, {
-                method: "post",
-                body: form,
-             });
-
+                const res = await fetch(this.url + recurso,{
+                  method: "post",
+                  body: form,
+                });
+                const data = await res.json();
+                console.log(data);
+                if(data == null){
+                  M.toast({html: "no hay datos"});
+                }else{
+                  M.toast({html: "hola"});
+                }
             
             }catch (error) {
                 console.log(error);

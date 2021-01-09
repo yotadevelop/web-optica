@@ -79,7 +79,7 @@
                 </div>
                 <!-------------------------------------------Fin Buscar Cliente----------------------------------------->
 
-
+            <form @submit.prevent="crearReceta">
                 <div class="card-panel "><b>
                         <hr class="b1"></b>
                     Tipo Lente: *
@@ -138,6 +138,7 @@
                                     <option value="externa">externa</option>
                                 </select>
                             </div>
+                            {{$data}}
                             <!--Fin Base--->
                         </div>
                         <div class="col l6 ">
@@ -199,7 +200,7 @@
                             <input type="text" v-model="nombre_medico" placeholder="nombre Medico">
                         </div>
                         <div class="col l4 center"><br><br><br><br> <br>
-                            <button v-on:click="crearReceta()" class="btn w50">Crear Receta</button>
+                            <button class="btn w50">Crear Receta</button>
                             <p>
                                 <?php if (isset($_SESSION['resp'])) {
                                     echo $_SESSION['resp'];
@@ -209,6 +210,7 @@
                         </div>
                     </div>
                 </div>
+            </form>
             </div>
         </div>
 
